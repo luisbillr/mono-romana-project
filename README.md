@@ -19,11 +19,11 @@ Tablas de la Base de Datos a utilizar
 
 #### Tareas
 
-**Estarlin Rivera** (Modulo de Categoria)
-**Jose Roman** (Modulo Presentacion)
-**Omar Yei** (Modulo Proveedor, Modulo Cliente)
-**Michael Williams** (Modulo Trabajador, Modulo Articulo)
-**Luis Bill** (Modulo Venta, Modulo Ingreso)
+- **Estarlin Rivera** (Modulo de Categoria)
+- **Jose Roman** (Modulo Presentacion)
+- **Omar Yei** (Modulo Proveedor, Modulo Cliente)
+- **Michael Williams** (Modulo Trabajador, Modulo Articulo)
+- **Luis Bill** (Modulo Venta, Modulo Ingreso)
 
 Cada Tabla es un modulo, hay que trabajarla en cada Capa..
 Osea al que le toque un Modulo tendra que desarrollar la logica en cada capa.
