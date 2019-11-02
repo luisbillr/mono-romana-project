@@ -33,6 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCreate = new System.Windows.Forms.TabPage();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.txtSalario = new System.Windows.Forms.MaskedTextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -65,10 +67,21 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.tabPageRegla = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbCategoria = new System.Windows.Forms.CheckBox();
+            this.cbCliente = new System.Windows.Forms.CheckBox();
+            this.cbIngreso = new System.Windows.Forms.CheckBox();
+            this.cbVenta = new System.Windows.Forms.CheckBox();
+            this.cbTrabajador = new System.Windows.Forms.CheckBox();
+            this.cbProveedor = new System.Windows.Forms.CheckBox();
+            this.cbPresentacion = new System.Windows.Forms.CheckBox();
+            this.cbArticulo = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPageCreate.SuspendLayout();
             this.tabPageFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPageRegla.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -76,15 +89,18 @@
             this.tabControl1.Controls.Add(this.tabPageCreate);
             this.tabControl1.Controls.Add(this.tabPageFind);
             this.tabControl1.Controls.Add(this.tabPageRegla);
-            this.tabControl1.Location = new System.Drawing.Point(0, 12);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(763, 470);
+            this.tabControl1.Size = new System.Drawing.Size(763, 482);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPageCreate
             // 
             this.tabPageCreate.BackColor = System.Drawing.Color.White;
+            this.tabPageCreate.Controls.Add(this.btnCancelar);
+            this.tabPageCreate.Controls.Add(this.btnEliminar);
             this.tabPageCreate.Controls.Add(this.txtSalario);
             this.tabPageCreate.Controls.Add(this.btnGuardar);
             this.tabPageCreate.Controls.Add(this.btnAgregar);
@@ -114,20 +130,46 @@
             this.tabPageCreate.Location = new System.Drawing.Point(4, 22);
             this.tabPageCreate.Name = "tabPageCreate";
             this.tabPageCreate.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCreate.Size = new System.Drawing.Size(755, 444);
+            this.tabPageCreate.Size = new System.Drawing.Size(755, 456);
             this.tabPageCreate.TabIndex = 2;
             this.tabPageCreate.Text = "MANTENIMIENTO";
             this.tabPageCreate.ToolTipText = "Formulario De Trabajador";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(179)))), ((int)(((byte)(252)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(179)))), ((int)(((byte)(254)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(374, 394);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(83, 37);
+            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(281, 394);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(83, 37);
+            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtSalario
             // 
             this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.Location = new System.Drawing.Point(119, 279);
-            this.txtSalario.Mask = "0000000";
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(158, 26);
             this.txtSalario.TabIndex = 9;
-            this.txtSalario.ValidatingType = typeof(int);
+            this.txtSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalario_KeyPress);
             // 
             // btnGuardar
             // 
@@ -141,6 +183,7 @@
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnAgregar
             // 
@@ -222,6 +265,7 @@
             this.txtPaswword.Name = "txtPaswword";
             this.txtPaswword.Size = new System.Drawing.Size(176, 26);
             this.txtPaswword.TabIndex = 12;
+            this.txtPaswword.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 
@@ -238,6 +282,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(200, 26);
             this.txtTelefono.TabIndex = 7;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtDocumento
             // 
@@ -246,6 +291,7 @@
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(207, 26);
             this.txtDocumento.TabIndex = 5;
+            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             // 
             // txtApellido
             // 
@@ -382,7 +428,7 @@
             this.tabPageFind.Location = new System.Drawing.Point(4, 22);
             this.tabPageFind.Name = "tabPageFind";
             this.tabPageFind.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFind.Size = new System.Drawing.Size(755, 444);
+            this.tabPageFind.Size = new System.Drawing.Size(755, 456);
             this.tabPageFind.TabIndex = 1;
             this.tabPageFind.Text = "BUSCAR TRABAJADOR";
             this.tabPageFind.ToolTipText = "Listado de Trabajadores";
@@ -394,7 +440,6 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -422,6 +467,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(739, 328);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // txtBuscar
             // 
@@ -429,7 +475,8 @@
             this.txtBuscar.Location = new System.Drawing.Point(122, 50);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(183, 26);
-            this.txtBuscar.TabIndex = 2;
+            this.txtBuscar.TabIndex = 0;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
             // 
             // label13
             // 
@@ -451,12 +498,14 @@
             this.btnBuscar.Location = new System.Drawing.Point(323, 44);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(91, 41);
-            this.btnBuscar.TabIndex = 0;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Consultar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // tabPageRegla
             // 
+            this.tabPageRegla.Controls.Add(this.groupBox1);
             this.tabPageRegla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageRegla.Location = new System.Drawing.Point(4, 22);
             this.tabPageRegla.Name = "tabPageRegla";
@@ -465,6 +514,111 @@
             this.tabPageRegla.TabIndex = 3;
             this.tabPageRegla.Text = "REGLA";
             this.tabPageRegla.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cbCategoria);
+            this.groupBox1.Controls.Add(this.cbCliente);
+            this.groupBox1.Controls.Add(this.cbIngreso);
+            this.groupBox1.Controls.Add(this.cbVenta);
+            this.groupBox1.Controls.Add(this.cbTrabajador);
+            this.groupBox1.Controls.Add(this.cbProveedor);
+            this.groupBox1.Controls.Add(this.cbPresentacion);
+            this.groupBox1.Controls.Add(this.cbArticulo);
+            this.groupBox1.Location = new System.Drawing.Point(37, 31);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(680, 376);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Permitir Acceso";
+            // 
+            // cbCategoria
+            // 
+            this.cbCategoria.AutoSize = true;
+            this.cbCategoria.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbCategoria.Location = new System.Drawing.Point(111, 131);
+            this.cbCategoria.Name = "cbCategoria";
+            this.cbCategoria.Size = new System.Drawing.Size(115, 29);
+            this.cbCategoria.TabIndex = 7;
+            this.cbCategoria.Text = "Categoria";
+            this.cbCategoria.UseVisualStyleBackColor = true;
+            // 
+            // cbCliente
+            // 
+            this.cbCliente.AutoSize = true;
+            this.cbCliente.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCliente.Location = new System.Drawing.Point(428, 71);
+            this.cbCliente.Name = "cbCliente";
+            this.cbCliente.Size = new System.Drawing.Size(90, 29);
+            this.cbCliente.TabIndex = 6;
+            this.cbCliente.Text = "Cliente";
+            this.cbCliente.UseVisualStyleBackColor = true;
+            // 
+            // cbIngreso
+            // 
+            this.cbIngreso.AutoSize = true;
+            this.cbIngreso.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbIngreso.Location = new System.Drawing.Point(428, 131);
+            this.cbIngreso.Name = "cbIngreso";
+            this.cbIngreso.Size = new System.Drawing.Size(95, 29);
+            this.cbIngreso.TabIndex = 5;
+            this.cbIngreso.Text = "Ingreso";
+            this.cbIngreso.UseVisualStyleBackColor = true;
+            // 
+            // cbVenta
+            // 
+            this.cbVenta.AutoSize = true;
+            this.cbVenta.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbVenta.Location = new System.Drawing.Point(111, 250);
+            this.cbVenta.Name = "cbVenta";
+            this.cbVenta.Size = new System.Drawing.Size(81, 29);
+            this.cbVenta.TabIndex = 4;
+            this.cbVenta.Text = "Venta";
+            this.cbVenta.UseVisualStyleBackColor = true;
+            // 
+            // cbTrabajador
+            // 
+            this.cbTrabajador.AutoSize = true;
+            this.cbTrabajador.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbTrabajador.Location = new System.Drawing.Point(428, 250);
+            this.cbTrabajador.Name = "cbTrabajador";
+            this.cbTrabajador.Size = new System.Drawing.Size(125, 29);
+            this.cbTrabajador.TabIndex = 3;
+            this.cbTrabajador.Text = "Trabajador";
+            this.cbTrabajador.UseVisualStyleBackColor = true;
+            // 
+            // cbProveedor
+            // 
+            this.cbProveedor.AutoSize = true;
+            this.cbProveedor.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbProveedor.Location = new System.Drawing.Point(428, 190);
+            this.cbProveedor.Name = "cbProveedor";
+            this.cbProveedor.Size = new System.Drawing.Size(121, 29);
+            this.cbProveedor.TabIndex = 2;
+            this.cbProveedor.Text = "Proveedor";
+            this.cbProveedor.UseVisualStyleBackColor = true;
+            // 
+            // cbPresentacion
+            // 
+            this.cbPresentacion.AutoSize = true;
+            this.cbPresentacion.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbPresentacion.Location = new System.Drawing.Point(111, 190);
+            this.cbPresentacion.Name = "cbPresentacion";
+            this.cbPresentacion.Size = new System.Drawing.Size(143, 29);
+            this.cbPresentacion.TabIndex = 1;
+            this.cbPresentacion.Text = "Presentacion";
+            this.cbPresentacion.UseVisualStyleBackColor = true;
+            // 
+            // cbArticulo
+            // 
+            this.cbArticulo.AutoSize = true;
+            this.cbArticulo.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F);
+            this.cbArticulo.Location = new System.Drawing.Point(111, 71);
+            this.cbArticulo.Name = "cbArticulo";
+            this.cbArticulo.Size = new System.Drawing.Size(94, 29);
+            this.cbArticulo.TabIndex = 0;
+            this.cbArticulo.Text = "Articulo";
+            this.cbArticulo.UseVisualStyleBackColor = true;
             // 
             // TrabajadorForm
             // 
@@ -484,6 +638,9 @@
             this.tabPageFind.ResumeLayout(false);
             this.tabPageFind.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPageRegla.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -524,5 +681,16 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TabPage tabPageRegla;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox cbCategoria;
+        private System.Windows.Forms.CheckBox cbCliente;
+        private System.Windows.Forms.CheckBox cbIngreso;
+        private System.Windows.Forms.CheckBox cbVenta;
+        private System.Windows.Forms.CheckBox cbTrabajador;
+        private System.Windows.Forms.CheckBox cbProveedor;
+        private System.Windows.Forms.CheckBox cbPresentacion;
+        private System.Windows.Forms.CheckBox cbArticulo;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
