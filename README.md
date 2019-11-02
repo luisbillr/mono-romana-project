@@ -46,9 +46,9 @@ usar en todas las Capas.
 _**PosSystem**_: Capa de Presentacion, tendran los formularios necesarios que lleva los modulos
 asignados, se conecta con Entity y BusinessLogic.
 
-_________ 
+---
 
 > Nota: Para los Formularios Usar Blanco y Este tipo de Azul #46b3fe RGB(70, 179, 254),
 > osea todo blanco y las decoraciones Azul (Botones, Bordes,etc).
 
-Solo Usar Rojo Para los Botones de Advertencias (como Salir, Cancelar,Eliminar,etc..) 
+Solo Usar Rojo Para los Botones de Advertencias (como Salir, Cancelar,Eliminar,etc..)
