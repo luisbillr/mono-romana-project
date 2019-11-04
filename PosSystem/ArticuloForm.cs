@@ -16,10 +16,10 @@ namespace PosSystem
     public partial class ArticuloForm : Form
     {
 
-        DataSetCombo dtCombo = new DataSetCombo();
+        DataSetCombox dtCombo = new DataSetCombox();
 
-        DataSetComboTableAdapters.CategoriaTableAdapter categoria = new DataSetComboTableAdapters.CategoriaTableAdapter();
-        DataSetComboTableAdapters.PresentacionTableAdapter presentacion = new DataSetComboTableAdapters.PresentacionTableAdapter();
+        DataSetComboxTableAdapters.CategoriaTableAdapter categoria = new DataSetComboxTableAdapters.CategoriaTableAdapter();
+        DataSetComboxTableAdapters.PresentacionTableAdapter presentacion = new DataSetComboxTableAdapters.PresentacionTableAdapter();
         
         public ArticuloForm()
         {
@@ -176,6 +176,9 @@ namespace PosSystem
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Limpiar(txtNombre, txtDescripcion, txtCodigo);
+            btnGuardar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnAgregar.Enabled = true;
 
         }
 
