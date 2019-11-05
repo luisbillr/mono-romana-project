@@ -6,3 +6,6 @@ D:\mono-romana-project\Data\obj\Debug\Data.csprojAssemblyReference.cache
 D:\mono-romana-project\Data\obj\Debug\Data.csproj.CopyComplete
 D:\mono-romana-project\Data\obj\Debug\Data.dll
 D:\mono-romana-project\Data\obj\Debug\Data.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.pdb

@@ -2,3 +2,8 @@ D:\mono-romana-project\Entity\bin\Debug\Entity.dll
 D:\mono-romana-project\Entity\bin\Debug\Entity.pdb
 D:\mono-romana-project\Entity\obj\Debug\Entity.dll
 D:\mono-romana-project\Entity\obj\Debug\Entity.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Entity\bin\Debug\Entity.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Entity\bin\Debug\Entity.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Entity\obj\Debug\Entity.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Entity\obj\Debug\Entity.pdb

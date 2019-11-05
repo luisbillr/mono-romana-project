@@ -8,3 +8,6 @@ D:\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyRefer
 D:\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
 D:\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\BusinessLogic\obj\Debug\BusinessLogic.pdb
