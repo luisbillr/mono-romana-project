@@ -230,16 +230,10 @@ namespace Data
                 if (SqlCon.State == ConnectionState.Closed) SqlCon.Open();
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "proc_buscar_proveedor_nombre";
+                SqlCmd.CommandText = "proc_buscar_proveedor_razon_social";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@textobuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = TextoBuscar;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
+                SqlCmd.Parameters.AddWithValue("@textobuscar", TextoBuscar);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
@@ -272,13 +266,7 @@ namespace Data
                 SqlCmd.CommandText = "proc_buscar_proveedor_rnc";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@textobuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = TextoBuscar;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
+                SqlCmd.Parameters.AddWithValue("@textobuscar",TextoBuscar);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);

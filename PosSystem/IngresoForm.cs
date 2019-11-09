@@ -530,7 +530,7 @@ namespace PosSystem
 
         private void IngresoForm_Load(object sender, EventArgs e)
         {
-            GetInstancia();
+            
             this.Top = 0;
             this.Left = 0;
             this.Mostrar();
@@ -561,7 +561,7 @@ namespace PosSystem
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             Codigo = Convert.ToString(row.Cells[1].Value);
-                            //Rpta = NIngreso.Anular(Convert.ToInt32(Codigo));
+                            //Rpta = IngresoBL.Anular(Convert.ToInt32(Codigo));
                         }
                         //Se evalua si se anuló el registro
                         if (Rpta.Equals("OK"))

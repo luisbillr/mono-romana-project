@@ -456,7 +456,7 @@
             this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStock.Location = new System.Drawing.Point(95, 56);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(111, 21);
+            this.txtStock.Size = new System.Drawing.Size(121, 21);
             this.txtStock.TabIndex = 37;
             // 
             // label4
@@ -652,7 +652,7 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Image = global::PosSystem.Properties.Resources.add;
             this.btnAgregar.Location = new System.Drawing.Point(734, 14);
@@ -706,6 +706,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "IngresoForm";
             this.Text = "IngresoForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IngresoForm_FormClosing);

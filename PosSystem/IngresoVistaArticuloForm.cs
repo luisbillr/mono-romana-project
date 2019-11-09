@@ -31,7 +31,7 @@ namespace PosSystem
         private void Mostrar()
         {
             this.dataListado.DataSource = IngresoBL.Buscar_Articulo_Ingreso_Nombre(txtBuscar.Text);
-            //this.OcultarColumnas();
+            this.OcultarColumnas();
             lblTotal.Text = "Total De Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
 
@@ -39,7 +39,7 @@ namespace PosSystem
         private void Buscar_Articulo_Nombre()
         {
             this.dataListado.DataSource = IngresoBL.Buscar_Articulo_Ingreso_Nombre(txtBuscar.Text);
-           // this.OcultarColumnas();
+            this.OcultarColumnas();
             lblTotal.Text = "Total De Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
 
@@ -60,7 +60,7 @@ namespace PosSystem
 
         private void IngresoVistaArticuloForm_Load(object sender, EventArgs e)
         {
-
+            this.Buscar_Articulo_Nombre();
         }
 
         private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)

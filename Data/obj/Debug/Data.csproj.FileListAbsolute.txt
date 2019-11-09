@@ -9,3 +9,7 @@ D:\mono-romana-project\Data\obj\Debug\Data.pdb
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.dll
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\obj\Debug\Data.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\bin\Debug\Data.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\bin\Debug\Data.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\bin\Debug\Entity.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Data\bin\Debug\Entity.pdb

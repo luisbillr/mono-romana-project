@@ -35,7 +35,7 @@ namespace PosSystem
         private void BuscarRazon_Social()
         {
             this.dataListado.DataSource = IngresoBL.Buscar_Proveedor_Ingreso_Nombre(this.txtBuscar.Text);
-            this.OcultarColumnas();
+           // this.OcultarColumnas();
             lblTotal.Text = "Total De Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
 
@@ -43,7 +43,7 @@ namespace PosSystem
         private void BuscarNum_Documento()
         {
             this.dataListado.DataSource = IngresoBL.Buscar_Proveedor_Ingreso_RNC(this.txtBuscar.Text);
-            this.OcultarColumnas();
+           // this.OcultarColumnas();
             lblTotal.Text = "Total De Registros: " + Convert.ToString(dataListado.Rows.Count);
         }
         private void IngresoVistaProveedorForm_Load(object sender, EventArgs e)

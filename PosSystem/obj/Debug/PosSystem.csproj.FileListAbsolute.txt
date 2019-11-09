@@ -26,3 +26,11 @@ C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\Po
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\obj\Debug\PosSystem.Properties.Resources.resources
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\obj\Debug\PosSystem.TrabajadorForm.resources
 C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\obj\Debug\PosSystem.csproj.GenerateResource.Cache
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\PosSystem.exe
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\PosSystem.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\BusinessLogic.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\Entity.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\Data.dll
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\BusinessLogic.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\Entity.pdb
+C:\Users\Asistente\Documents\yo\Monografico PLT\luisbillr\mono-romana-project\PosSystem\bin\Debug\Data.pdb
